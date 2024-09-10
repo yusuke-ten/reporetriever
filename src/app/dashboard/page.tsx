@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { MenuIcon, SearchIcon, BellIcon, UserCircleIcon } from "lucide-react";
+import KnowledgeGraph from "@/components/KnowledgeGraph";
 
 export default function Layout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -87,6 +88,7 @@ export default function Layout() {
           <h1 className="text-3xl font-semibold text-gray-900">Dashboard</h1>
           <p className="mt-2 text-gray-600">Welcome to your dashboard!</p>
           {/* Add your page content here */}
+          <KnowledgeGraph />
         </main>
       </div>
     </div>
